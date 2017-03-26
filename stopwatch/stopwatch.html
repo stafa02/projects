@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+	<style>
+		table, th, td {
+    			background-color: blue;
+		}
+		th, td {
+    			padding: 80px;
+		}
+		body{
+			background-color: black;
+		}
+		div {
+    			word-spacing: 10px;
+			font-size: 50px;
+			padding:10px;
+		}
+	</style>
+</head>
+<body onload="show();">
+	<script src="stopwatch.js"></script>
+	<script src="driver.js"></script>
+	<div align = "center" style = "color:white;font-size:20px;">Input: <input type = "text" value = "0" id="endTime"> <input type = "button" value = "update" onclick = "updateTime()"> </div>
+	<br /><br /><br />
+	<div align = "center">
+	<table>
+		<tr>
+			<td>
+				<div style="color:white;border-style:dotted;border-color:white;" align="center"><span id="time"></span></div>
+				&nbsp;<input type="button" value=" start " onclick="start(1);" style = "color:green;font-size:30px" id ="startX">
+				<input type="button" value="reset" onclick="reset(1)" style = "font-size:30px">
+			</td>
+			<td>
+				<div style="border-style:dotted;border-color:black;" align="center"><span id="timeReverse"></span></div>
+				&nbsp;<input type="button" value=" start " onclick="start(0)" style = "color:green;font-size:30px" id = "startY">
+				<input type="button" value="reset" onclick="reset(0)" style = "font-size:30px">
+			</td>
+		</tr>
+	</table>
+	</div>
+</body>
+</html>
