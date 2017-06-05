@@ -1,0 +1,1 @@
+create table tasks(id int NOT NULL PRIMARY KEY AUTO_INCREMENT, description varchar(255));
